@@ -1,0 +1,176 @@
+body {
+  font-family: "Quintessential", serif;
+    /* background-image:url("https://cdn.pixabay.com/photo/2022/03/02/09/17/wallpaper-7042708_1280.jpg");
+    background-size: cover; */
+    background: #222629;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .primary-btn {
+    background: #86c232;
+    color: #fff;
+    border-radius: 8px;
+  }
+  .primary-btn:hover {
+    background: #61892f;
+    color: #fff;
+  }
+  
+  .secondary-btn {
+    background: #fff;
+    color: #FF6F61;
+    border: 2px solid #FF6F61;
+    border-radius: 8px;
+  }
+  .secondary-btn:hover {
+    background: #FF6F61;
+    color: #fff;
+  }
+  
+  .capsule-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .capsule-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .status {
+    font-weight: bold;
+    color: #FFA500;
+  }
+  .status.open {
+    color: green;
+  }
+  #capsuleModalBody img, #capsuleModalBody video {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+    
+
+
+/* Navbar hover effects */
+.navbar-nav .nav-link {
+  color: white !important;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: white !important; /* Gold hover */
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: #222629;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Brand animation */
+#brand {
+  transition: transform 0.3s, color 0.3s;
+}
+#brand:hover {
+  transform: scale(1.1);
+  color: #FFD700;
+}
+
+/* Sticky navbar shadow on scroll */
+.navbar.sticky-top.scrolled {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s;
+}
+
+/* Dropdown hover effect */
+.navbar-nav .dropdown-menu a:hover {
+  background-color: #f0f0f0;
+  color: #61892f !important;
+}
+.navbar-brand img {
+  transition: transform 0.3s;
+}
+.navbar-brand img:hover {
+  transform: scale(1.1);
+}
+
+/* Login Card Animation */
+.card {
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Input focus animation */
+.form-control:focus {
+  border-color:#86c232;
+  box-shadow: 0 0 10px rgba(40, 167, 69, 0.3);
+}
+
+/* Button hover */
+.btn-success:hover {
+  background-color: #218838;
+  transform: scale(1.02);
+  transition: all 0.3s;
+}
+
+/* Sign up link hover */
+#goSignup:hover {
+  text-decoration: underline;
+  color: #86c232;
+  transition: 0.3s;
+}
+/* Card hover effect for capsules */
+.capsule-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 15px;
+}
+.capsule-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+/* Capsule status badges */
+.badge-locked {
+  background-color: orange;
+  color: white;
+  font-weight: 500;
+}
+.badge-open {
+  background-color: green;
+  color: white;
+  font-weight: 500;
+}
+
+/* Form focus animation */
+.form-control:focus, .form-control-lg:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 10px rgba(40,167,69,0.3);
+}
+
+/* Button hover */
+.btn-success:hover {
+  background-color: #218838;
+  transform: scale(1.02);
+  transition: all 0.3s;
+}
+

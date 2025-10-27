@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TimeTales App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./TimeTales.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #86c232; transition: all 0.3s;">
+  <a class="navbar-brand text-light font-weight-bold d-flex align-items-center" href="#">
+    <img src="https://png.pngtree.com/png-vector/20221020/ourmid/pngtree-quicktime-png-image_6365776.png" alt="TimeTales Logo" style="height: 90px; width: 90px; margin-right: 10px; margin-bottom:-20px; margin-top:-20px;">
+    TimeTales
+  </a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto" id="nav-links">
+      <li class="nav-item"><a class="nav-link" href="#" id="nav-login">Login</a></li>
+      <li class="nav-item"><a class="nav-link" href="#" id="nav-signup">Sign Up</a></li>
+      <li class="nav-item dropdown d-none" id="profileDropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="nav-profile" role="button" data-toggle="dropdown">Profile</a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" href="#" id="myCapsules">My Capsules</a>
+          <a class="dropdown-item" href="#" id="editProfile">Edit Profile</a>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link d-none" href="#" id="nav-logout">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- Main Container -->
+<div class="container my-5" id="main-container">
+  <!-- Content injected by JS-->
+</div>
+
+<!-- Capsule Modal -->
+<div class="modal fade" id="capsuleModal" tabindex="-1" role="dialog" aria-labelledby="capsuleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" style="color:#61892f;" id="capsuleModalLabel">Capsule</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="capsuleModalBody">
+          <!-- Capsule content will be injected here -->
+        </div>
+        <div class="modal-footer">
+          <button style="background-color:#61892f;" class="btn btn-primary" id="downloadCapsule">Download</button>
+          <button class="btn btn-secondary" id="shareCapsule">Copy Share Link</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+<!-- Bootstrap JS + jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="./TimeTales.js"></script>
+</body>
+</html> 
+
